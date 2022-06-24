@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Stylish Portfolio - Start Bootstrap Template</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -17,8 +16,25 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+    <script>const elements = document.querySelectorAll(".circular");
+const elements_span = [];
+elements.forEach((element, index) => {
+    if (!elements_span[index])
+    elements_span[index] = element.querySelector("span");
+    element.addEventListener("mouseover", e => {
+        elements_span[index].style.left = e.pageX - element.getBoundingClientRect().left - window.scrollX + "px";
+        elements_span[index].style.top = e.pageY - element.getBoundingClientRect().top - window.scrollY + "px";
+    });
+    element.addEventListener("mouseout", e => {
+        elements_span[index].style.left = e.pageX - element.getBoundingClientRect().left - window.scrollX + "px";
+        elements_span[index].style.top = e.pageY - element.getBoundingClientRect().top - window.scrollY + "px";
+    });
+})</script>
+
+<script src="jquery_zag.js"></script>
     <body id="page-top">
-        <!-- Navigation-->
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -26,7 +42,6 @@
                 <li class="sidebar-nav-item"><a href="#page-top">Вверх</a></li>
                 <li class="sidebar-nav-item"><a href="#about">Обо мне</a></li>
                 <li class="sidebar-nav-item"><a href="#portfolio">Чему научился</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Мои контакты</a></li>
             </ul>
         </nav>
         <!-- Header-->
@@ -38,6 +53,9 @@
             </div>
         </header>
         <!-- About-->
+        <div class="sels">
+
+        </div>
         <section class="content-section bg-light" id="about">
             <div class="container px-4 px-lg-5 text-center">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -52,7 +70,9 @@
             </div>
         </section>
 
+        <div class="sels">
 
+        </div>
         <section class="content-section bg-primary text-white text-center" id="services">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading">
@@ -80,8 +100,337 @@
                 </div>
             </div>
         </section>
+        <div class="sel">
 
+        </div>
+        <section class="callout">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mx-auto mb-5">
+                    Владею английским языком на уровне
+                    <em>B2</em>
+                </h2>
+            </div>
+        </section>
+        <div class="sels">
 
+        </div>
+        <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Языки</h3>
+                    <h2 class="mb-5">Которыми владею</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">C++</div>
+                                    <p class="mb-0">знаю ООП. все его принципы. также все конструкции языка, умею работать в Rad studio </p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/c++.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">C#</div>
+                                    <p class="mb-0">знаю ООП. все его принципы. также все конструкции языка, умею работать в Windows Forms</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/sis.png" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">JavaScript</div>
+                                    <p class="mb-0">Знаю большинство нюансов языка, также есть опыт работы   в React</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/js.jpg" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">MySql</div>
+                                    <p class="mb-0">Умею создавать базы данных, запросы для них,процедуры, тригеры и настраивать их</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/MySql.png" alt="..." />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sels">
+
+        </div>
+        <!-- Content section 2-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/02.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Владислав Анисимов</h2>
+                            <p>19 лет. Учусь в Минском Колледже Предпринимательства. Родился 24.12.2002. Ниже преведены некоторые из моих работ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 3-->
+        <div class="sels">
+
+        </div>
+
+<div class="slider">
+    <div class="slider-slides">
+        <div class="slider-slide" style="background-image: url(1.png);"></div>
+        <!-- Еще слайды -->
+        <div class="slider-slide" style="background-image: url(2.png);"></div>
+    </div>
+    <div class="slider-dots"></div>
+
+    <div class="sel">
+
+    </div>
+</div>
+<div class="selS">
+
+</div>
+<div class="sels">
+
+</div>
+<script >window.addEventListener("load", windowLoadHandler, false);
+let sphereRad = 380; // радиус
+let scale = 1; // масштаб
+function windowLoadHandler() {
+    canvasApp();
+}
+function canvasApp() {
+    let theCanvas = document.getElementById("sphere");
+    let sphere_wrap = document.getElementById("sphere-wrap");
+    let context = theCanvas.getContext("2d");
+    let displayWidth;
+    let displayHeight;
+    let timer;
+    let wait;
+    let count;
+    let numToAddEachFrame;
+    let particleList;
+    let recycleBin;
+    let particleAlpha;
+    let fLen;
+    let m;
+    let projCenterX;
+    let projCenterY;
+    let zMax;
+    let turnAngle;
+    let turnSpeed;
+    let sphereCenterX, sphereCenterY, sphereCenterZ;
+    let particleRad;
+    let zeroAlphaDepth;
+    let randAccelX, randAccelY, randAccelZ;
+    let gravity;
+    let rgbString;
+    let p;
+    let outsideTest;
+    let nextParticle;
+    let sinAngle;
+    let cosAngle;
+    let rotX, rotZ;
+    let depthAlphaFactor;
+    let i;
+    let theta, phi;
+    let x0, y0, z0;
+    init();
+    window.addEventListener('resize', init, false);
+    function init() {
+        wait = 1;
+        count = wait - 1;
+        numToAddEachFrame = 8;
+        rgbString = "rgba(255, 51, 51,"; // цвет частиц
+        particleAlpha = 1;
+        displayWidth = theCanvas.width = sphere_wrap.offsetWidth;
+        displayHeight = theCanvas.height = sphere_wrap.offsetHeight;
+        fLen = 320;
+        projCenterX = displayWidth/3; // центр сферы по оси X
+        projCenterY = displayHeight/2; // центр сферы по оси Y
+        zMax = fLen-2;
+        particleList = {};
+        recycleBin = {};
+        randAccelX = 0.1;
+        randAccelY = 0.1;
+        randAccelZ = 0.1;
+        gravity = -0;
+        particleRad = 2.5; // размер частиц
+        sphereCenterX = 0;
+        sphereCenterY = 0;
+        sphereCenterZ = -3 - sphereRad;
+        zeroAlphaDepth = -750;
+        turnSpeed = 2*Math.PI/1200; // скорость вращения сферы
+        turnAngle = 0;
+        timer = setInterval(onTimer, 10/24);
+    }
+    function onTimer() {
+        count++;
+        if (count >= wait) {
+            count = 0;
+            for (i = 0; i < numToAddEachFrame; i++) {
+                theta = Math.random()*2*Math.PI;
+                phi = Math.acos(Math.random()*2-1);
+                x0 = sphereRad*Math.sin(phi)*Math.cos(theta);
+                y0 = sphereRad*Math.sin(phi)*Math.sin(theta);
+                z0 = sphereRad*Math.cos(phi);
+                let p = addParticle(x0, sphereCenterY + y0, sphereCenterZ + z0, 0.002*x0, 0.002*y0, 0.002*z0);
+                p.attack = 50;
+                p.hold = 50;
+                p.decay = 100;
+                p.initValue = 0;
+                p.holdValue = particleAlpha;
+                p.lastValue = 0;
+                p.stuckTime = 90 + Math.random()*20;
+                p.accelX = 0;
+                p.accelY = gravity;
+                p.accelZ = 0;
+            }
+        }
+        turnAngle = (turnAngle + turnSpeed) % (2*Math.PI);
+        sinAngle = Math.sin(turnAngle);
+        cosAngle = Math.cos(turnAngle);
+        context.clearRect(0, 0, displayWidth, displayHeight);
+        p = particleList.first;
+        while (p != null) {
+            nextParticle = p.next;
+            p.age++;
+            if (p.age > p.stuckTime) {
+                p.velX += p.accelX + randAccelX*(Math.random()*2 - 1);
+                p.velY += p.accelY + randAccelY*(Math.random()*2 - 1);
+                p.velZ += p.accelZ + randAccelZ*(Math.random()*2 - 1);
+                p.x += p.velX;
+                p.y += p.velY;
+                p.z += p.velZ;
+            }
+            rotX =  cosAngle*p.x + sinAngle*(p.z - sphereCenterZ);
+            rotZ =  -sinAngle*p.x + cosAngle*(p.z - sphereCenterZ) + sphereCenterZ;
+            m = scale * fLen/(fLen - rotZ);
+            p.projX = rotX*m + projCenterX;
+            p.projY = p.y*m + projCenterY;
+            if (p.age < p.attack+p.hold+p.decay) {
+                if (p.age < p.attack) {
+                    p.alpha = (p.holdValue - p.initValue)/p.attack*p.age + p.initValue;
+                    } else if (p.age < p.attack+p.hold) {
+                    p.alpha = p.holdValue;
+                    } else if (p.age < p.attack+p.hold+p.decay) {
+                    p.alpha = (p.lastValue - p.holdValue)/p.decay*(p.age-p.attack-p.hold) + p.holdValue;
+                }
+                } else {
+                p.dead = true;
+            }
+            if ((p.projX > displayWidth)||(p.projX<0)||(p.projY<0)||(p.projY>displayHeight)||(rotZ>zMax)) {
+                outsideTest = true;
+                } else {
+                outsideTest = false;
+            }
+
+            if (outsideTest||p.dead) {
+                recycle(p);
+                } else {
+                depthAlphaFactor = (1-rotZ/zeroAlphaDepth);
+                depthAlphaFactor = (depthAlphaFactor > 1) ? 1 : ((depthAlphaFactor<0) ? 0 : depthAlphaFactor);
+                context.fillStyle = rgbString + depthAlphaFactor*p.alpha + ")";
+                context.beginPath();
+                context.arc(p.projX, p.projY, m*particleRad, 0, 2*Math.PI, false);
+                context.closePath();
+                context.fill();
+            }
+            p = nextParticle;
+        }
+    }
+    function addParticle(x0,y0,z0,vx0,vy0,vz0) {
+        let newParticle;
+        let color;
+        if (recycleBin.first != null) {
+            newParticle = recycleBin.first;
+            if (newParticle.next != null) {
+                recycleBin.first = newParticle.next;
+                newParticle.next.prev = null;
+                } else {
+                recycleBin.first = null;
+            }
+            } else {
+            newParticle = {};
+        }
+        if (particleList.first == null) {
+            particleList.first = newParticle;
+            newParticle.prev = null;
+            newParticle.next = null;
+            } else {
+            newParticle.next = particleList.first;
+            particleList.first.prev = newParticle;
+            particleList.first = newParticle;
+            newParticle.prev = null;
+        }
+        newParticle.x = x0;
+        newParticle.y = y0;
+        newParticle.z = z0;
+        newParticle.velX = vx0;
+        newParticle.velY = vy0;
+        newParticle.velZ = vz0;
+        newParticle.age = 0;
+        newParticle.dead = false;
+        if (Math.random() < 0.5) {
+            newParticle.right = true;
+            } else {
+            newParticle.right = false;
+        }
+        return newParticle;
+    }
+    function recycle(p) {
+        if (particleList.first == p) {
+            if (p.next != null) {
+                p.next.prev = null;
+                particleList.first = p.next;
+                } else {
+                particleList.first = null;
+            }
+            } else {
+            if (p.next == null) {
+                p.prev.next = null;
+                } else {
+                p.prev.next = p.next;
+                p.next.prev = p.prev;
+            }
+        }
+        if (recycleBin.first == null) {
+            recycleBin.first = p;
+            p.prev = null;
+            p.next = null;
+            } else {
+            p.next = recycleBin.first;
+            recycleBin.first.prev = p;
+            recycleBin.first = p;
+            p.prev = null;
+        }
+    }
+}</script>
+<div id="sphere-wrap">
+    <canvas id="sphere"></canvas>
+</div>
+<div class="cen">
+<label class="cb-label">
+    <input class="cb pristine" type="checkbox" /> <span>Нравится Сфера ?</span>
+</label>
+</div>
         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
