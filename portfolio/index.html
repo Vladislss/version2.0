@@ -33,6 +33,7 @@ elements.forEach((element, index) => {
     });
 })</script>
 
+<script src="wow.js"></script>
 <script src="jquery_zag.js"></script>
     <body id="page-top">
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
@@ -40,18 +41,20 @@ elements.forEach((element, index) => {
             <ul class="sidebar-nav">
                 <li class="sidebar-brand"><a href="#page-top">Навигация</a></li>
                 <li class="sidebar-nav-item"><a href="#page-top">Вверх</a></li>
-                <li class="sidebar-nav-item"><a href="#about">Обо мне</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Чему научился</a></li>
+                <li class="sidebar-nav-item"><a href="#about">Вступление</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Навыки</a></li>
+                <li class="sidebar-nav-item"><a href="#info">Обо мне</a></li>
             </ul>
         </nav>
         <!-- Header-->
         <header class="masthead d-flex align-items-center">
-            <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1">История Успеха Азамата </h1>
-                <h3 class="mb-5"><em>Чему я научился за 3 года в МКП</em></h3>
+            <div class="container px-4 px-lg-5 text-center" id="bubble-1">
+                <h1 class="mb-1" id="stxt">История Успеха Азамата </h1>
+                <h3 class="mb-5" id="stxt"><em>Чему я научился за 3 года в МКП</em></h3>
                 <a class="btn btn-primary btn-xl" href="#about">Отправляемся в путь!</a>
             </div>
         </header>
+
         <!-- About-->
         <div class="sels">
 
@@ -61,9 +64,6 @@ elements.forEach((element, index) => {
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-10">
                         <h2>Обычные учащиеся, необычайные преподователи, фантастическое место !</h2>
-                        <p class="lead mb-5">
-                            Я являюсь программистом !
-                        </p>
                         <a class="btn btn-dark btn-xl" href="#services">Далее</a>
                     </div>
                 </div>
@@ -176,12 +176,12 @@ elements.forEach((element, index) => {
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/02.jpg" alt="..." /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" id="info" src="assets/02.jpg" alt="..." /></div>
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
                             <h2 class="display-4">Владислав Анисимов</h2>
-                            <p>19 лет. Учусь в Минском Колледже Предпринимательства. Родился 24.12.2002. Ниже преведены некоторые из моих работ.</p>
+                            <p>19 лет. Учусь в Минском Колледже Предпринимательства. Родился 24.12.2002. Учился в средней школе N210. Закончил 9 классов и поступил в МКП, где на данный момент обучаюсь на специальности ПОИТ на 3м курсе. Ниже преведены некоторые из моих работ.</p>
                         </div>
                     </div>
                 </div>
@@ -262,7 +262,7 @@ function canvasApp() {
         particleAlpha = 1;
         displayWidth = theCanvas.width = sphere_wrap.offsetWidth;
         displayHeight = theCanvas.height = sphere_wrap.offsetHeight;
-        fLen = 320;
+        fLen = 400;
         projCenterX = displayWidth/3; // центр сферы по оси X
         projCenterY = displayHeight/2; // центр сферы по оси Y
         zMax = fLen-2;
